@@ -45,12 +45,3 @@ services:
       - nextcloudapp
     environment:
       - TZ=America/Havana
-      - 8080:80
-    links:
-      - app
-    volumes:
-      - /opt/nginx-netcloud-config/nginx.conf:/etc/nginx/nginx.conf:ro
-    volumes_from:
-      - app
-    environment:
-      - TZ=America/Caracas
