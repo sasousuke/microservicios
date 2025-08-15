@@ -4,5 +4,11 @@ https://aprendiendoavirtualizar.com/copiar-una-imagen-docker-a-otro-host/
 # Exportar una imagen
 docker save nombre_imagen > /directorio_destino/fichero.tar
 
+# Comprimir la imagen con zip para disminuir tamaño del archivo
+zip /directorio_destino/fichero.tar.zip /directorio_destino/fichero.tar
+
 # Cargar una imagen
 docker load -i /directorio/fichero.tar
+
+# Descomprimir la imagen con unzip
+unzip /directorio_destino/fichero.tar.zip
