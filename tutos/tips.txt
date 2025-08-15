@@ -1,2 +1,8 @@
-# Para crear salva de la imagen ya descargada y poder usarla en otra PC
+# Para exportar y cargar una imagen ya descargada y poder usarla en otra PC
 https://aprendiendoavirtualizar.com/copiar-una-imagen-docker-a-otro-host/
+
+# Exportar una imagen
+docker save nombre_imagen > /directorio_destino/fichero.tar
+
+# Cargar una imagen
+docker load -i /directorio/fichero.tar
