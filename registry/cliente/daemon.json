@@ -1,0 +1,3 @@
+{
+    "insecure-registries": ["nombrefqdnservidor.midominio.:5000","IPservidor:5000"]
+}
