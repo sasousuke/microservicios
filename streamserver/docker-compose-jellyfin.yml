@@ -1,18 +1,21 @@
+version: "3.5"
+
 services:
   jellyfin:
     image: linuxserver/jellyfin:10.10.7
     container_name: jellyfin
+    hostname: jellyfin
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/Havana
-      # - JELLYFIN_PublishedServerUrl=192.168.41.241 #Descomentar si el servicio es por IP
+      # - JELLYFIN_PublishedServerUrl=192.168.0.1 #Descomentar si el servicio es por IP
       # - JELLYFIN_PublishedServerUrl=jellyfin.midominio.com #Descomentar si el servicio es por DNS
+    volumes:
+      - /opt/jellyfin/config:/config
+      - /opt/jellyfin/media:/data
     ports:
       - 8096:8096
       - 8920:8920 #optional
       - 7359:7359/udp #optional
-    volumes:
-      - /opt/jellyfin-config:/config
-      - /opt/jellyfin-media:/data
     restart: always
