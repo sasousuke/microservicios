@@ -1,3 +1,5 @@
+version: "3.5"
+
 services:
   mstream:
     image: linuxserver/mstream:5.13.1
