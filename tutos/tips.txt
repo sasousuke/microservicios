@@ -12,3 +12,15 @@ docker load -i /directorio/fichero.tar
 
 # Descomprimir la imagen con unzip
 unzip /directorio_destino/fichero.tar.zip
+
+# Ejecutar docker compose con archivos separados de configuración
+# esto lo hago para hacer en consola lo que se hace
+# usando portainer
+
+# Levantando el servicio declarado
+docker compose -f mstream.yml up -d
+docker compose -f jellyfin.yml up -d
+
+# Deteniendo el servicio declarado
+docker compose -f mstream.yml down
+docker compose -f jellyfin.yml down
