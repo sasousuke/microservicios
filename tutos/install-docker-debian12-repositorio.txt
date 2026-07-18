@@ -8,8 +8,10 @@ nano /etc/docker/daemon.json
 # por el siguiente
 # NOTA SO ANORMAL: es todo así textualmente desde el signo de "{" hasta su cerrado "}"
 # Esto es porque no vas a poder acceder a los repos de dockerhub directamente.
-{ 
-    "registry-mirrors": [ 
+{
+    "registry-mirrors": [
+    "https://docker-io.cuza.dev",
+    "https://registry.docker.ir",
     "https://rw21enj1.mirror.aliyuncs.com",
     "https://dockerhub.azk8s.cn",
     "https://reg-mirror.qiniu.com",
