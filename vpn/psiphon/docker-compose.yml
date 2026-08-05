@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   psiphon:
-    image: swarupsengupta2007/psiphon:2.0.34 
+    image: swarupsengupta2007/psiphon:2.0.34
     container_name: psiphon
     environment:
       - PUID=1000
@@ -16,4 +16,4 @@ services:
     ports:
       - 3128:8080
       - 3129:1080
-    restart: unless-stopped      
+    restart: unless-stopped
