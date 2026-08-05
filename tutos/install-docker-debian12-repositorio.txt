@@ -24,3 +24,6 @@ nano /etc/docker/daemon.json
     "https://registry.docker-cn.com"
     ]
 }
+
+systemctl daemon-reload
+systemctl restart docker.service
