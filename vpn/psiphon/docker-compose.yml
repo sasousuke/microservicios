@@ -16,4 +16,4 @@ services:
     ports:
       - 3128:8080
       - 3129:1080
-    restart: unless-stopped
+    restart: always
