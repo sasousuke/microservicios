@@ -1,0 +1,11 @@
+services:
+  squid:
+    image: sameersbn/squid:3.5.27-2
+    container_name: squid
+    hostname: squid
+    ports:
+      - "5900:3128"
+    volumes:
+      - /opt/squid/cache:/var/spool/squid
+      - /opt/squid/conf/squid.conf:/etc/squid/squid.conf
+    restart: always
